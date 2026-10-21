@@ -1,0 +1,11 @@
+CREATE TABLE test_execution_logs (
+    test_id INT PRIMARY KEY AUTO_INCREMENT,
+    test_name VARCHAR(100),
+    status VARCHAR(50),
+    execution_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+INSERT INTO test_execution_logs (test_name, status)
+VALUES ('UI_Data_Entry_Test', 'PASS');
+
+SELECT * FROM test_execution_logs WHERE status = 'PASS';
+
