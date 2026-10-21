@@ -13,8 +13,8 @@ def test_data_entry_form():
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
 
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    # service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(options=chrome_options)
 
     driver.get("https://testautomationpractice.blogspot.com")
 
