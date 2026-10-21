@@ -16,7 +16,7 @@ def test_data_entry_form():
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    driver.get("https://testautomationpractice.blogspot.com")[span_4](start_span)[span_4](end_span)
+    driver.get("https://testautomationpractice.blogspot.com")
 
     driver.find_element(By.ID, "name").send_keys("Telugu Mawa")
     driver.find_element(By.ID, "email").send_keys("telugumawa@gmail.com")
