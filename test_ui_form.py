@@ -7,16 +7,16 @@ from selenium.webdriver.chrome.service import Service
 
 
 def test_data_entry_form():
-    # Headless mode setup (Screen leni GitHub Runner kosam)
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
-    driver.get("https://testautomationpractice.blogspot.com")[span_0](start_span)[span_0](end_span)
+    driver.get("https://testautomationpractice.blogspot.com")[span_4](start_span)[span_4](end_span)
 
     driver.find_element(By.ID, "name").send_keys("Telugu Mawa")
     driver.find_element(By.ID, "email").send_keys("telugumawa@gmail.com")
